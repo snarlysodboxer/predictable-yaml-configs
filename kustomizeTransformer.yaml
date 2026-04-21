@@ -1,0 +1,11 @@
+---
+# predictable-yaml: kind=kustomizeTransformer
+nameReference:
+- kind: TODO
+  fieldSpecs:
+  - kind: TODO
+    path: TODO
+
+images:
+- kind: TODO
+  path: TODO

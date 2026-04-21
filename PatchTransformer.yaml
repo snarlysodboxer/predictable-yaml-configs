@@ -1,0 +1,10 @@
+---
+apiVersion: builtin  # first, required
+kind: PatchTransformer  # required
+metadata:  # required
+  name: TODO  # first, required
+target:  # required
+  kind: TODO  # required
+patch: |-  # required
+  - op: TODO
+    path: TODO

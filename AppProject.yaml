@@ -1,0 +1,22 @@
+---
+apiVersion: argoproj.io/v1alpha1  # first, required
+kind: AppProject  # required
+metadata:  # required
+  name: TODO  # first, required
+  namespace: TODO  # preferred
+  labels:  # required
+    app: TODO  # first
+    app.kubernetes.io/name: TODO  # required
+  annotations: {}
+spec:  # required
+  description: TODO  # first
+  sourceRepos: []
+  destinations:
+  - namespace: TODO
+    server: TODO
+  clusterResourceWhitelist:
+  - group: TODO
+    kind: TODO
+  namespaceResourceWhitelist:
+  - group: TODO
+    kind: TODO

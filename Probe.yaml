@@ -1,0 +1,18 @@
+---
+apiVersion: monitoring.coreos.com/v1  # first, required
+kind: Probe  # required
+metadata:  # required
+  name: TODO  # first, required
+  namespace: TODO  # preferred
+  labels:  # required
+    app: TODO  # first
+    app.kubernetes.io/name: TODO  # required
+  annotations: {}
+spec:  # required
+  prober:
+    url: TODO
+    path: TODO
+  module: TODO
+  targets:
+    staticConfig:
+      static: []

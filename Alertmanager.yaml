@@ -1,0 +1,42 @@
+---
+apiVersion: monitoring.coreos.com/v1  # first, required
+kind: Alertmanager  # required
+metadata:  # required
+  name: TODO  # first, required
+  namespace: TODO  # preferred
+  labels:  # required
+    app: TODO  # first
+    app.kubernetes.io/name: TODO  # required
+  annotations: {}
+spec:  # required
+  serviceAccountName: TODO  # first, required
+  replicas: TODO
+  image: TODO  # preferred
+  configSecret: TODO
+  securityContext:
+    fsGroup: TODO
+    runAsNonRoot: TODO
+    runAsUser: TODO
+  affinity:
+    podAntiAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+      - topologyKey: TODO
+        labelSelector:  # preferred
+          matchLabels:  # preferred
+            app: TODO  # first
+            app.kubernetes.io/name: TODO  # preferred
+  nodeSelector:
+    kubernetes.io/os: TODO
+  podMetadata:  # preferred
+    labels:  # preferred
+      app: TODO  # first
+      app.kubernetes.io/name: TODO  # preferred
+  resources: {}  # ditto=Pod.spec.containers[0].resources
+  version: TODO
+  volumes:
+  - name: TODO  # required
+    configMap:
+      name: TODO
+  volumeMounts:
+  - name: TODO  # required
+    mountPath: TODO

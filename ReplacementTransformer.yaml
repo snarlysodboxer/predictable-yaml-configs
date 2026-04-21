@@ -1,0 +1,15 @@
+---
+apiVersion: builtin  # first, required
+kind: ReplacementTransformer  # required
+metadata:  # required
+  name: TODO  # first, required
+replacements:  # required
+- source:  # required
+    kind: TODO  # first, required
+    name: TODO  # required
+    fieldPath: TODO  # required
+  targets:  # required
+  - select:  # first, required
+      kind: TODO  # first, required
+      name: TODO  # required
+    fieldPaths: []  # required

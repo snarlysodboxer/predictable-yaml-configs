@@ -1,0 +1,27 @@
+---
+apiVersion: apps/v1  # first, required
+kind: Deployment  # required
+metadata:  # required
+  name: TODO  # first, required
+  namespace: TODO  # preferred
+  labels:  # required
+    app: TODO  # first
+    app.kubernetes.io/name: TODO  # required
+  annotations: {}
+spec:  # required
+  replicas: TODO  # first
+  revisionHistoryLimit: TODO
+  minReadySeconds: TODO
+  selector:  # required
+    matchLabels:  # preferred
+      app: TODO  # first
+      app.kubernetes.io/name: TODO  # required
+  strategy:  # preferred
+    type: TODO  # first, required
+  template:  # required
+    metadata:  # required
+      name: TODO
+      labels:  # required
+        app: TODO  # first
+        app.kubernetes.io/name: TODO  # required
+    spec: {}  # ditto=Pod.spec, required

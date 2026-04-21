@@ -1,0 +1,13 @@
+---
+apiVersion: scheduling.k8s.io/v1  # first, required
+kind: PriorityClass  # required
+metadata:  # required
+  name: TODO  # first, required
+  labels:  # required
+    app: TODO  # first
+    app.kubernetes.io/name: TODO  # required
+  annotations: {}
+description: TODO
+preemptionPolicy: TODO
+globalDefault: TODO
+value: TODO

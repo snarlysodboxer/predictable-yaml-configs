@@ -1,0 +1,17 @@
+---
+apiVersion: gateway.envoyproxy.io/v1alpha1  # first, required
+kind: EnvoyProxy  # required
+metadata:  # required
+  name: TODO  # first, required
+  namespace: TODO  # required
+  labels:  # required
+    app: TODO  # first
+    app.kubernetes.io/name: TODO  # required
+  annotations: {}
+spec:  # required
+  provider:
+    type: TODO
+    kubernetes:
+      envoyDeployment:
+        container:
+          image: TODO

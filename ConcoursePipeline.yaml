@@ -1,0 +1,103 @@
+---
+# predictable-yaml: kind=ConcoursePipeline
+groups:  # first
+- name: TODO  # required
+  jobs:
+  - TODO
+
+resource_types:
+- name: TODO  # first, required
+  type: TODO  # required
+  source:  # required
+    repository: TODO  # required
+    tag: TODO  # preferred
+    username: TODO  # preferred
+    password: TODO  # preferred
+
+resources:  # required
+- name: TODO  # required
+  type: TODO  # required
+  icon: TODO  # required
+  tags: []
+  source:  # preferred
+    url: TODO
+    repository: TODO
+    tag: TODO
+    driver: TODO
+    uri: TODO
+    private_key: TODO
+    username: TODO
+    password: TODO
+    branch: TODO
+
+jobs:
+- name: TODO  # first, required
+  old_name: TODO
+  serial: TODO
+  serial_groups: []
+  max_in_flight: TODO
+  build_log_retention:
+    days: TODO
+    builds: TODO
+    minimum_succeeded_builds: TODO
+  build_logs_to_retain: TODO
+  public: TODO
+  disable_manual_trigger: TODO
+  interruptible: TODO
+  plan:  # required
+  - across:
+    - var: TODO
+      # values: []  # Can be both a Scalar and Sequence
+      fail_fast: TODO
+      max_in_flight: TODO
+    get: TODO
+    put: TODO
+    task: TODO
+    load_var: TODO
+    set_pipeline: TODO
+    file: TODO
+    image: TODO
+    in_parallel:
+      limit: TODO
+      fail_fast: TODO
+      steps: []  # ditto=.jobs[0].plan
+    try: {}  # ditto=.jobs[0].plan[0].
+    do: []  # ditto=.jobs[0].plan
+    resource: TODO
+    trigger: TODO
+    passed: []
+    tags: []
+    privileged: TODO
+    attempts: TODO
+    timeout: TODO
+    format: TODO
+    config:
+      platform: TODO  # preferred
+      image_resource:  # preferred
+        type: TODO  # required
+        source:  # required
+          repository: TODO  # required
+          tag: TODO  # preferred
+          username: TODO
+          password: TODO
+      inputs:
+      - name: TODO  # required
+      outputs:
+      - name: TODO  # required
+      caches:
+      - path: TODO
+      params: {}
+      run:
+        user: TODO
+        dir: TODO
+        path: TODO
+        args:
+        - TODO  # required
+    input_mapping: {}
+    output_mapping: {}
+    params: {}
+  ensure: {}  # ditto=.jobs[0].plan[0].
+  on_failure: {}  # ditto=.jobs[0].plan[0].
+  on_success: {}  # ditto=.jobs[0].plan[0].
+  on_error: {}  # ditto=.jobs[0].plan[0].
+  on_abort: {}  # ditto=.jobs[0].plan[0].

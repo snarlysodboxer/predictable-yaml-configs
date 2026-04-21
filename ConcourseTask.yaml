@@ -1,0 +1,22 @@
+---
+# predictable-yaml: kind=ConcourseTask
+platform: TODO
+image_resource:
+  type: TODO
+  source:
+    repository: TODO
+    tag: TODO
+    username: TODO
+    password: TODO
+inputs:
+- name: TODO  # required
+outputs:
+- name: TODO  # required
+caches:
+- path: TODO
+params: {}
+run:
+  user: TODO
+  dir: TODO
+  path: TODO
+  args: []  # required

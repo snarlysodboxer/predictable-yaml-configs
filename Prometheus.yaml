@@ -1,0 +1,47 @@
+---
+apiVersion: monitoring.coreos.com/v1  # first, required
+kind: Prometheus  # required
+metadata:  # required
+  name: TODO  # first, required
+  namespace: TODO  # preferred
+  labels:  # required
+    app: TODO  # first
+    app.kubernetes.io/name: TODO  # required
+  annotations: {}
+spec:  # required
+  image: TODO
+  externalUrl: TODO
+  nodeSelector: {}
+  podMetadata: {}
+  podMonitorNamespaceSelector: {}
+  podMonitorSelector: {}
+  probeNamespaceSelector: {}
+  probeSelector: {}
+  replicas: TODO
+  resources: {}  # ditto=Pod.spec.containers[0].resources
+  retention: TODO
+  ruleSelector: {}
+  securityContext: {}
+  serviceAccountName: TODO
+  serviceMonitorNamespaceSelector: {}
+  serviceMonitorSelector: {}
+  version: TODO
+  affinity:
+    podAntiAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+      - topologyKey: TODO
+        labelSelector: {}
+  alerting:
+    alertmanagers:
+    - apiVersion: v2  # first, required
+      name: TODO  # required
+      namespace: TODO  # preferred
+      port: TODO  # preferred
+  storage:
+    volumeClaimTemplate:
+      spec:
+        storageClassName: TODO
+        resources: {}
+  containers:
+  - name: TODO  # first, required
+    image: TODO  # required

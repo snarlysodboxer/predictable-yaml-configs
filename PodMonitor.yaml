@@ -1,0 +1,22 @@
+---
+apiVersion: monitoring.coreos.com/v1  # first, required
+kind: PodMonitor  # required
+metadata:  # required
+  name: TODO  # first, required
+  namespace: TODO  # preferred
+  labels:  # required
+    app: TODO  # first
+    app.kubernetes.io/name: TODO  # required
+    prometheus: TODO  # required
+  annotations: {}
+spec:  # required
+  selector:  # preferred
+    matchLabels:  # preferred
+      app: TODO  # first
+      app.kubernetes.io/name: TODO
+  namespaceSelector: {}
+  podMetricsEndpoints:  # preferred
+  - port: TODO  # first, required
+    interval: TODO  # preferred
+    scrapeTimeout: TODO  # preferred
+  podTargetLabels: []

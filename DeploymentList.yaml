@@ -1,0 +1,6 @@
+---
+apiVersion: core/v1  # first, required
+kind: DeploymentList  # required
+metadata:  # required
+  name: TODO  # first, required
+items: []  # ditto=Deployment.

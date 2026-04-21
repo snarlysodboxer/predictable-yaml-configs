@@ -1,0 +1,34 @@
+---
+apiVersion: admissionregistration.k8s.io/v1  # first, required
+kind: MutatingWebhookConfiguration  # required
+metadata:  # required
+  name: TODO  # first, required
+  labels:  # required
+    app: TODO  # first
+    app.kubernetes.io/name: TODO  # required
+  annotations: {}
+webhooks:  # required
+- name: TODO  # first, required
+  clientConfig:
+    service:
+      name: TODO  # first
+      namespace: TODO
+      path: TODO
+  failurePolicy: TODO
+  sideEffects: TODO
+  admissionReviewVersions: []
+  namespaceSelector:
+    matchExpressions:
+    - key: TODO  # first, required
+      operator: TODO  # required
+      values: []  # required
+  objectSelector:
+    matchExpressions:
+    - key: TODO  # first, required
+      operator: TODO  # required
+      values: []  # required
+  rules:
+  - apiGroups: []  # first
+    apiVersions: []
+    operations: []
+    resources: []

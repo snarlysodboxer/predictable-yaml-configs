@@ -1,0 +1,22 @@
+---
+apiVersion: gateway.networking.k8s.io/v1  # first, required
+kind: Gateway  # required
+metadata:  # required
+  name: TODO  # first, required
+  namespace: TODO  # required
+  labels:  # required
+    app: TODO  # first
+    app.kubernetes.io/name: TODO  # required
+  annotations: {}
+spec:  # required
+  gatewayClassName: TODO  # first, required
+  listeners:  # required
+  - name: TODO  # first, required
+    port: TODO  # required
+    protocol: TODO
+    allowedRoutes:
+      namespaces:
+        from: TODO
+    tls:
+      mode: TODO
+      certificateRefs: []

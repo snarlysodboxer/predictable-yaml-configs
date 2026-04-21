@@ -1,0 +1,48 @@
+---
+apiVersion: monitoring.coreos.com/v1  # first, required
+kind: ServiceMonitor  # required
+metadata:  # required
+  name: TODO  # first, required
+  namespace: TODO  # preferred
+  labels:  # required
+    app: TODO  # first
+    app.kubernetes.io/name: TODO  # required
+    prometheus: TODO  # preferred
+  annotations: {}
+spec:  # required
+  selector:  # first
+    matchLabels:  # preferred
+      app: TODO  # preferred
+      app.kubernetes.io/name: TODO  # preferred
+  namespaceSelector:  # preferred
+    matchNames: []  # preferred
+  jobLabel: TODO  # preferred
+  endpoints:  # required
+  - port: TODO  # first
+    targetPort: TODO  # preferred
+    path: TODO
+    scheme: TODO
+    interval: TODO
+    scrapeTimeout: TODO
+    honorLabels: TODO
+    bearerTokenFile: TODO
+    tlsConfig:
+      serverName: TODO
+      caFile: TODO
+      insecureSkipVerify: TODO
+    basicAuth:
+      username:
+        name: TODO  # first
+        key: TODO
+      password:
+        name: TODO  # first
+        key: TODO
+    metricRelabelings:
+    - sourceLabels: []
+      targetLabel: TODO
+      replacement: TODO
+    - action: TODO  # first
+      regex: TODO
+    relabelings:
+    - action: TODO  # first
+      regex: TODO

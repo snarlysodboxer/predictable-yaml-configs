@@ -1,0 +1,25 @@
+---
+apiVersion: monitoring.coreos.com/v1  # first, required
+kind: PrometheusRule  # required
+metadata:  # required
+  name: TODO  # first, required
+  namespace: TODO  # preferred
+  labels:  # required
+    app: TODO  # first
+    app.kubernetes.io/name: TODO  # required
+    prometheus: TODO  # preferred
+  annotations: {}
+spec:  # required
+  groups:  # preferred
+  - name: TODO  # first, required
+    rules:  # required
+    - alert: TODO  # first, preferred
+      for: TODO  # preferred
+      labels: {}  # preferred
+      annotations:  # preferred
+        friendly_name: TODO  # first, preferred
+        description: TODO  # preferred
+        runbook_url: TODO  # preferred
+        summary: TODO  # preferred
+      record: TODO
+      expr: TODO  # preferred

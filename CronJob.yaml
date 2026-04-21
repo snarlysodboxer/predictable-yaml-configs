@@ -1,0 +1,28 @@
+---
+apiVersion: batch/v1beta1  # first, required
+kind: CronJob  # required
+metadata:  # required
+  name: TODO  # first, required
+  namespace: TODO  # preferred
+  labels:  # required
+    app: TODO  # first
+    app.kubernetes.io/name: TODO  # required
+  annotations: {}
+spec:  # required
+  suspend: TODO  # first
+  schedule: TODO  # required
+  concurrencyPolicy: TODO
+  jobTemplate:  # required
+    metadata:  # preferred
+      labels:  # preferred
+        app: TODO  # first, preferred
+        app.kubernetes.io/name: TODO  # preferred
+    spec:  # required
+      backoffLimit: TODO
+      activeDeadlineSeconds: TODO
+      template:  # required
+        metadata:  # preferred
+          labels:  # preferred
+            app: TODO  # first, preferred
+            app.kubernetes.io/name: TODO  # preferred
+        spec:  # ditto=Pod.spec
