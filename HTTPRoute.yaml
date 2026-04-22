@@ -14,10 +14,15 @@ spec:  # required
     namespace: TODO  # required
   hostnames: []  # required
   rules:  # required
-  - matches:  # first, required
+  - matches:  # first
     - path:  # required
         type: TODO  # required
         value: TODO  # required
-    backendRefs:  # required
+    backendRefs:
     - name: TODO  # first, required
       port: TODO  # required
+  - filters:
+    - type: TODO  # first, required
+      requestRedirect:
+        scheme: TODO
+        statusCode: TODO

@@ -1,0 +1,17 @@
+---
+apiVersion: security.istio.io/v1  # first, required
+kind: PeerAuthentication  # required
+metadata:  # required
+  name: TODO  # first, required
+  namespace: TODO  # required
+  labels:  # required
+    app: TODO  # first
+    app.kubernetes.io/name: TODO  # required
+spec:  # required
+  selector:  # first, required
+    matchLabels:
+      app: TODO  # first
+      app.kubernetes.io/name: TODO  # required
+  mtls:
+    mode: TODO
+  portLevelMtls: {}
