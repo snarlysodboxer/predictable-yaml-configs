@@ -1,0 +1,33 @@
+---
+apiVersion: gateway.envoyproxy.io/v1alpha1  # first, required
+kind: BackendTrafficPolicy  # required
+metadata:  # required
+  name: TODO  # first, required
+  namespace: TODO  # required
+  labels:  # required
+    app: TODO  # first
+    app.kubernetes.io/name: TODO  # required
+spec:  # required
+  targetRefs:
+  - group: TODO  # first, required
+    kind: TODO  # required
+    name: TODO
+  retry:
+    numRetries: TODO
+    perRetry:
+      timeout: TODO
+      backOff:
+        baseInterval: TODO
+        maxInterval: TODO
+    retryOn:
+      triggers: []
+      httpStatusCodes: []
+  circuitBreaker:
+    maxConnections: TODO
+    maxPendingRequests: TODO
+    maxParallelRequests: TODO
+    maxParallelRetries: TODO
+  timeout:
+    http:
+      connectionIdleTimeout: TODO
+      requestTimeout: TODO

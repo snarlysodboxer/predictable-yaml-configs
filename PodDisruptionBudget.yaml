@@ -1,0 +1,16 @@
+---
+apiVersion: policy/v1  # first, required
+kind: PodDisruptionBudget  # required
+metadata:  # required
+  name: TODO  # first, required
+  namespace: TODO  # required
+  labels:  # required
+    app: TODO  # first
+    app.kubernetes.io/name: TODO  # required
+spec:  # required
+  minAvailable: TODO
+  maxUnavailable: TODO
+  selector:
+    matchLabels:
+      app: TODO
+      app.kubernetes.io/name: TODO  # preferred
