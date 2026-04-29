@@ -12,6 +12,10 @@ spec:  # required
   - group: TODO  # first, required
     kind: TODO  # required
     name: TODO
+  timeout:
+    http:
+      connectionIdleTimeout: TODO
+      requestTimeout: TODO
   retry:
     numRetries: TODO
     perRetry:
@@ -22,12 +26,18 @@ spec:  # required
     retryOn:
       triggers: []
       httpStatusCodes: []
+  rateLimit:
+    local:
+      rules:
+      - clientSelectors:  # first
+        - sourceCIDR:
+            type: TODO  # first
+            value: TODO
+        limit:
+          requests: TODO
+          unit: TODO
   circuitBreaker:
     maxConnections: TODO
     maxPendingRequests: TODO
     maxParallelRequests: TODO
     maxParallelRetries: TODO
-  timeout:
-    http:
-      connectionIdleTimeout: TODO
-      requestTimeout: TODO

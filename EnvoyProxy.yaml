@@ -10,8 +10,48 @@ metadata:  # required
   annotations: {}
 spec:  # required
   provider:
-    type: TODO
+    type: TODO  # first
     kubernetes:
+      envoyService:
+        annotations: {}
       envoyDeployment:
+        strategy:
+          type: TODO  # first
+          rollingUpdate:
+            maxSurge: TODO
+            maxUnavailable: TODO
+        pod:
+          priorityClassName: TODO
+          affinity: {}  # ditto=Pod.spec.affinity
         container:
-          image: TODO
+          image: TODO  # first
+          resources:
+            requests:  # first
+              cpu: TODO
+              memory: TODO
+            limits:
+              cpu: TODO
+              memory: TODO
+      envoyHpa:
+        minReplicas: TODO  # first
+        maxReplicas: TODO
+        metrics:
+        - type: TODO  # first
+          resource:
+            name: TODO  # first
+            target:
+              type: TODO
+              averageUtilization: TODO
+  telemetry:
+    accessLog:
+      settings:
+      - format:
+          type: TODO  # first
+          json: {}
+        sinks:
+        - type: TODO  # first
+          file:
+            path: TODO
+  bootstrap:
+    type: TODO  # first
+    value: TODO

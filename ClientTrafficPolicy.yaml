@@ -1,0 +1,35 @@
+---
+apiVersion: gateway.envoyproxy.io/v1alpha1  # first, required
+kind: ClientTrafficPolicy  # required
+metadata:  # required
+  name: TODO  # first, required
+  namespace: TODO  # required
+  labels:  # required
+    app: TODO  # first
+    app.kubernetes.io/name: TODO  # required
+spec:  # required
+  targetRefs:  # first
+  - group: TODO  # first, required
+    kind: TODO  # required
+    name: TODO  # preferred
+  clientIPDetection:
+    xForwardedFor:
+      numTrustedHops: TODO
+  timeout:
+    http:
+      requestReceivedTimeout: TODO
+      idleTimeout: TODO
+  tcpKeepalive:
+    idleTime: TODO
+    interval: TODO
+    probes: TODO
+  connection:
+    bufferLimit: TODO
+  path:
+    escapedSlashesAction: TODO
+    disableMergeSlashes: TODO
+  http2:
+    initialStreamWindowSize: TODO
+    initialConnectionWindowSize: TODO
+    maxConcurrentStreams: TODO
+    onInvalidMessage: TODO
