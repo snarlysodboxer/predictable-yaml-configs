@@ -25,7 +25,9 @@ spec:  # required
         app.kubernetes.io/name: TODO  # required
     spec: {}  # ditto=Pod.spec
   volumeClaimTemplates:
-  - metadata:  # required
+  - apiVersion: TODO
+    kind: TODO
+    metadata:  # required
       name: TODO  # first, required
     spec:  # required
       accessModes: []

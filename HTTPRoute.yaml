@@ -9,17 +9,21 @@ metadata:  # required
     app.kubernetes.io/name: TODO  # required
   annotations: {}
 spec:  # required
-  parentRefs:  # first, required
-  - name: TODO  # first, required
+  hostnames: []  # first, required
+  parentRefs:  # required
+  - group: TODO  # first, preferred
+    kind: TODO  # preferred
+    name: TODO  # required
     namespace: TODO  # required
-  hostnames: []  # required
   rules:  # required
   - matches:  # first
     - path:  # required
         type: TODO  # required
         value: TODO  # required
     backendRefs:
-    - name: TODO  # first, required
+    - group: TODO  # first, preferred
+      kind: TODO  # preferred
+      name: TODO  # required
       port: TODO  # required
   - filters:
     - type: TODO  # first, required

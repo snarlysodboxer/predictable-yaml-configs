@@ -1,0 +1,24 @@
+---
+apiVersion: gateway.envoyproxy.io/v1alpha1  # first, required
+kind: SecurityPolicy  # required
+metadata:  # required
+  name: TODO  # first, required
+  namespace: TODO  # required
+  labels:  # required
+    app: TODO  # first
+    app.kubernetes.io/name: TODO  # required
+  annotations: {}
+spec:  # required
+  targetRefs:  # first, required
+  - group: TODO  # first, preferred
+    kind: TODO  # preferred
+    name: TODO  # required
+  oidc:
+    provider:
+      issuer: TODO
+    clientID: TODO
+    clientSecret:
+      name: TODO  # required
+    scopes: []
+    redirectURL: TODO
+    cookieDomain: TODO

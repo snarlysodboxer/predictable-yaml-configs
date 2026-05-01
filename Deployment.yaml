@@ -21,6 +21,7 @@ spec:  # required
   template:  # required
     metadata:  # required
       name: TODO
+      namespace: TODO
       labels:  # required
         app: TODO  # first
         app.kubernetes.io/name: TODO  # required
