@@ -12,6 +12,7 @@ spec:  # required
   replicas: TODO  # first, preferred
   serviceName: TODO  # preferred
   podManagementPolicy: TODO  # preferred
+  minReadySeconds: TODO
   updateStrategy:  # required
     type: TODO  # required
   selector:  # preferred
@@ -20,15 +21,22 @@ spec:  # required
       app.kubernetes.io/name: TODO  # required
   template:  # required
     metadata:  # preferred
+      name: TODO
+      namespace: TODO
       labels:  # preferred
         app: TODO  # first
         app.kubernetes.io/name: TODO  # required
+      annotations: {}
     spec: {}  # ditto=Pod.spec
   volumeClaimTemplates:
   - apiVersion: TODO
     kind: TODO
     metadata:  # required
       name: TODO  # first, required
+      namespace: TODO
+      labels: {}
+      annotations: {}
     spec:  # required
+      storageClassName: TODO
       accessModes: []
       resources: {}

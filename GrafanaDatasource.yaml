@@ -1,0 +1,24 @@
+---
+apiVersion: grafana.integreatly.org/v1beta1  # first, required
+kind: GrafanaDatasource  # required
+metadata:  # required
+  name: TODO  # first, required
+  namespace: TODO  # required
+  labels:  # required
+    app: TODO  # first
+    app.kubernetes.io/name: TODO  # required
+spec:  # required
+  instanceSelector:
+    matchLabels: {}
+  datasource:
+    name: TODO
+    type: TODO
+    uid: TODO
+    isDefault: TODO
+    url: TODO
+    access: TODO
+    jsonData:
+      httpHeaderName1: TODO
+      timeInterval: TODO
+    secureJsonData:
+      httpHeaderValue1: TODO

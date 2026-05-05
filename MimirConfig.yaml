@@ -1,0 +1,103 @@
+---
+# predictable-yaml: kind=MimirConfig
+activity_tracker:
+  filepath: TODO
+alertmanager:
+  data_dir: TODO
+  enable_api: TODO
+  external_url: TODO
+  fallback_config_file: TODO
+alertmanager_storage:
+  backend: TODO
+  storage_prefix: TODO
+  s3:
+    bucket_name: TODO  # first
+    endpoint: TODO
+    region: TODO
+blocks_storage:
+  backend: TODO
+  storage_prefix: TODO
+  s3:
+    bucket_name: TODO  # first
+    endpoint: TODO
+    region: TODO
+  bucket_store:
+    sync_dir: TODO
+  tsdb:
+    dir: TODO
+    head_compaction_interval: TODO
+    wal_replay_concurrency: TODO
+compactor:
+  data_dir: TODO
+  compaction_interval: TODO
+  deletion_delay: TODO
+  first_level_compaction_wait_period: TODO
+  max_opening_blocks_concurrency: TODO
+  max_closing_blocks_concurrency: TODO
+  symbols_flushers_concurrency: TODO
+  sharding_ring:
+    heartbeat_period: TODO
+    heartbeat_timeout: TODO
+    wait_stability_min_duration: TODO
+distributor:
+  remote_timeout: TODO
+  ring:
+    heartbeat_period: TODO
+    heartbeat_timeout: TODO
+frontend:
+  scheduler_address: TODO
+  parallelize_shardable_queries: TODO
+frontend_worker:
+  scheduler_address: TODO
+  grpc_client_config:
+    max_send_msg_size: TODO
+ingester:
+  ring:
+    final_sleep: TODO
+    heartbeat_period: TODO
+    heartbeat_timeout: TODO
+    num_tokens: TODO
+    tokens_file_path: TODO
+    unregister_on_shutdown: TODO
+ingester_client:
+  grpc_client_config:
+    max_send_msg_size: TODO
+    max_recv_msg_size: TODO
+limits:
+  compactor_blocks_retention_period: TODO
+  max_cache_freshness: TODO
+  max_label_names_per_series: TODO
+  max_query_parallelism: TODO
+  max_total_query_length: TODO
+  out_of_order_time_window: TODO
+memberlist:
+  abort_if_cluster_join_fails: TODO
+  compression_enabled: TODO
+  join_members: []
+multitenancy_enabled: TODO
+querier:
+  max_concurrent: TODO
+query_scheduler:
+  max_outstanding_requests_per_tenant: TODO
+ruler:
+  alertmanager_url: TODO
+  enable_api: TODO
+  rule_path: TODO
+ruler_storage:
+  backend: TODO
+  storage_prefix: TODO
+  s3:
+    bucket_name: TODO  # first
+    endpoint: TODO
+    region: TODO
+runtime_config:
+  file: TODO
+store_gateway:
+  sharding_ring:
+    heartbeat_period: TODO
+    heartbeat_timeout: TODO
+    tokens_file_path: TODO
+    unregister_on_shutdown: TODO
+    wait_stability_min_duration: TODO
+usage_stats:
+  enabled: TODO

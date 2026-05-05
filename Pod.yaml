@@ -94,7 +94,7 @@ spec:  # required
   affinity:
     podAntiAffinity:
       requiredDuringSchedulingIgnoredDuringExecution:
-      - topologyKey: TODO
+      - topologyKey: TODO  # first, preferred
         labelSelector:
           matchLabels:
             app: TODO  # first
@@ -114,7 +114,7 @@ spec:  # required
       preferredDuringSchedulingIgnoredDuringExecution:
       - weight: TODO  # preferred
         podAffinityTerm:  # preferred
-          topologyKey: TODO  # preferred
+          topologyKey: TODO  # first, preferred
           labelSelector:  # preferred
             matchLabels:  # preferred
               app: TODO  # first, preferred
@@ -123,3 +123,15 @@ spec:  # required
             - key: TODO  # first, required
               operator: TODO  # required
               values: []  # required
+  topologySpreadConstraints:
+  - topologyKey: TODO
+    maxSkew: TODO
+    whenUnsatisfiable: TODO
+    labelSelector:
+      matchLabels:
+        app: TODO  # first
+        app.kubernetes.io/name: TODO
+      matchExpressions:
+      - key: TODO  # first, required
+        operator: TODO  # required
+        values: []  # required

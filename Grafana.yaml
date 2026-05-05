@@ -1,0 +1,36 @@
+---
+apiVersion: grafana.integreatly.org/v1beta1  # first, required
+kind: Grafana  # required
+metadata:  # required
+  name: TODO  # first, required
+  namespace: TODO  # required
+  labels:  # required
+    app: TODO  # first
+    app.kubernetes.io/name: TODO  # required
+spec:  # required
+  config:
+    auth:
+      disable_login_form: TODO
+    auth.anonymous:
+      enabled: TODO
+    auth.google:
+      enabled: TODO  # first
+      scopes: TODO
+      auth_url: TODO
+      token_url: TODO
+      api_url: TODO
+      allowed_domains: TODO
+      allow_sign_up: TODO
+      use_pkce: TODO
+    server:
+      root_url: TODO
+    users:
+      auto_assign_org_role: TODO
+    log:
+      mode: TODO
+    analytics:
+      reporting_enabled: TODO
+  deployment:
+    spec:
+      template:
+        spec: {}  # ditto=Pod.spec

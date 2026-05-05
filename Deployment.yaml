@@ -18,6 +18,10 @@ spec:  # required
       app.kubernetes.io/name: TODO  # required
   strategy:  # preferred
     type: TODO  # first, required
+    rollingUpdate:
+      maxSurge: TODO
+      minAvailable: TODO
+      maxUnavailable: TODO
   template:  # required
     metadata:  # required
       name: TODO
@@ -25,4 +29,5 @@ spec:  # required
       labels:  # required
         app: TODO  # first
         app.kubernetes.io/name: TODO  # required
+      annotations: {}
     spec: {}  # ditto=Pod.spec, required

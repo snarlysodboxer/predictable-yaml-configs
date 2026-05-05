@@ -13,6 +13,7 @@ spec:  # required
     matchLabels: {}  # required
   updateStrategy:  # preferred
     type: TODO  # first, required
+  revisionHistoryLimit: TODO
   template:  # required
     metadata:  # required
       labels:  # required

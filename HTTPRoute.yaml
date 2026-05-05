@@ -9,7 +9,7 @@ metadata:  # required
     app.kubernetes.io/name: TODO  # required
   annotations: {}
 spec:  # required
-  hostnames: []  # first, required
+  hostnames: []  # first
   parentRefs:  # required
   - group: TODO  # first, preferred
     kind: TODO  # preferred

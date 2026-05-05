@@ -1,0 +1,16 @@
+---
+apiVersion: grafana.integreatly.org/v1beta1  # first, required
+kind: GrafanaDashboard  # required
+metadata:  # required
+  name: TODO  # first, required
+  namespace: TODO  # required
+  labels:  # required
+    app: TODO  # first
+    app.kubernetes.io/name: TODO  # required
+spec:  # required
+  instanceSelector:  # first
+    matchLabels:
+      dashboards: TODO
+  url: TODO
+  grafanaCom:
+    id: TODO

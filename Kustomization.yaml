@@ -27,8 +27,6 @@ patches:
   path: TODO  # preferred
   patch: TODO
 
-generators: []
-
 generatorOptions:
   labels:
     app: TODO  # first
@@ -46,5 +44,7 @@ configMapGenerator:
       app: TODO  # first, preferred
       app.kubernetes.io/name: TODO  # preferred
     annotations: {}
+
+generators: []
 
 transformers: []

@@ -8,7 +8,7 @@ metadata:  # required
     app: TODO  # first
     app.kubernetes.io/name: TODO  # required
   annotations: {}
-spec:  # required
+spec:  # preferred
   targetRefs:  # first, required
   - group: TODO  # first, preferred
     kind: TODO  # preferred
@@ -19,6 +19,6 @@ spec:  # required
     clientID: TODO
     clientSecret:
       name: TODO  # required
-    scopes: []
     redirectURL: TODO
     cookieDomain: TODO
+    scopes: []

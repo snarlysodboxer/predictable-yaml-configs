@@ -1,0 +1,13 @@
+---
+# predictable-yaml: kind=GrafanaAlert
+groups:  # first
+- name: TODO  # first, required
+  rules:
+  - alert: TODO  # first
+    expr: TODO
+    for: TODO
+    labels:
+      severity: TODO
+    annotations:
+      summary: TODO
+      description: TODO
